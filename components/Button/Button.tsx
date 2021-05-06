@@ -1,14 +1,14 @@
 import React from 'react'
-import styles from './EcsButton.module.css'
+import styles from './Button.module.css'
 import Link from '../Link'
 
-interface EcsButtonProps {
+interface ButtonProps {
     text: string
     link: string
     type: 'outline' | 'ghost' | 'solid' | 'solid-invert'
 }
 
-const EcsButton = ({ text, link, type }: EcsButtonProps) => {
+const Button = ({ text, link, type }: ButtonProps) => {
     const isLink = !!link.length
     const className = `${styles.button} ${styles[`button--${type}`]}`
     if (isLink) {
@@ -23,4 +23,4 @@ const EcsButton = ({ text, link, type }: EcsButtonProps) => {
     )
 }
 
-export default EcsButton
+export default Button

@@ -1,5 +1,5 @@
 import { Builder } from '@builder.io/react';
-import Button from './EcsButton';
+import EcsButton from './Button';
 
 export const ButtonBuilder = {
   name: 'Button',
@@ -13,8 +13,7 @@ export const ButtonBuilder = {
     {
       name: 'link',
       type: 'url',
-      required: true,
-      defaultValue: '/iabadabadu',
+      defaultValue: '',
     },
     {
       name: 'type',
@@ -26,4 +25,4 @@ export const ButtonBuilder = {
   ],
 }
 
-Builder.registerComponent(Button, ButtonBuilder);
+Builder.registerComponent(EcsButton, ButtonBuilder);
