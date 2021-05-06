@@ -2,7 +2,15 @@ import React from 'react'
 import { Image } from '@builder.io/react'
 import styles from './hero.module.css'
 
-const Hero = props => {
+interface HeroProps {
+    image: string
+    title: string
+    buttonLink: string
+    buttonText: string
+    height: number
+}
+
+const Hero = (props: HeroProps) => {
     const { image, title, buttonLink, buttonText, height } = props
 
     return (
