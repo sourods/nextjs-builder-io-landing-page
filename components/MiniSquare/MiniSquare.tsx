@@ -12,7 +12,7 @@ const MiniSquare = ({ text, image }: MiniSquareProps) => (
         <div className={styles.squareImage}>
             {image ? <Image src={image} /> : ''}
         </div>
-        { text.length ? <p>{text}</p> : ''}
+        { text ? <p>{text}</p> : ''}
     </span>
 )
 
