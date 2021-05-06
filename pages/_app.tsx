@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-
+import '../styles/global.css'
 import { builder } from '@builder.io/react'
 import builderConfig from '@config/builder'
 builder.init(builderConfig.apiKey)

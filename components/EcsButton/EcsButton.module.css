@@ -1,0 +1,41 @@
+.button {
+    width: 100%;
+    padding: 12px;
+    border: solid 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button--solid-invert,
+.button--outline {
+    border-color: rgba(0, 8, 36, 0.16);
+}
+
+.button--solid,
+.button--ghost {
+    border-color: transparent;
+}
+
+.button--ghost,
+.button--outline
+{
+    background-color: transparent;
+}
+
+.button--solid-invert {
+    background-color: white;
+}
+
+.button--solid {
+    background-color: #e63888;
+}
+
+.button--solid-invert,
+.button--ghost,
+.button--outline {
+    color: #e63888;
+}
+
+.button--solid {
+    color: white;
+}

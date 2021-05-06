@@ -7,7 +7,7 @@ import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 import { resolveBuilderContent } from '@lib/resolve-builder-content'
 import Link from '@components/Link'
-import '@components/Hero'
+import '@components/EcsButton'
 
 export async function getStaticProps({
   params,
