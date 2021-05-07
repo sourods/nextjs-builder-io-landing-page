@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const Button = ({ text, link, type }: ButtonProps) => {
-    const isLink = !!link.length
+    const isLink = link && link.length
     const className = `${styles.button} ${styles[`button--${type}`]}`
     if (isLink) {
         return (
